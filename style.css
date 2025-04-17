@@ -1,0 +1,393 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    /* Fonte padrão */
+    background-color: #1c1c1c;
+    /* Fundo preto suave */
+    color: #e0e0e0;
+    /* Texto cinza claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    /* Centraliza os itens */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    /* Fundo cinza escuro */
+    color: #fff;
+    /* Texto branco */
+    position: sticky;
+    /* Fixa o header no topo ao rolar */
+    top: 0;
+    z-index: 1000;
+    /* Garante que o header fique acima de outros elementos */
+}
+
+header nav ul {
+    list-style: none;
+    /* Remove os marcadores da lista */
+    display: flex;
+    /* Exibe os itens em linha */
+    gap: 20px;
+    /* Espaçamento entre os itens */
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: #c74200;
+    /* Cor dourada */
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 15px;
+    /* Espaçamento interno nos links */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s;
+    /* Animação ao passar o mouse */
+}
+
+header nav ul li a:hover {
+    background-color: #c74200;
+    /* Fundo dourado ao passar o mouse */
+    color: #333;
+    /* Texto preto ao passar o mouse */
+}
+
+/* Main */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2c2c2c;
+    /* Fundo cinza médio */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Sombra suave */
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #c74200;
+    /* Cor dourada */
+}
+
+main p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #d0d0d0;
+    /* Cinza claro */
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
+    align-items: center;
+    /* Centraliza os elementos horizontalmente */
+    background-color: #2c2c2c;
+    /* Fundo cinza médio */
+    padding: 20px;
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Sombra suave */
+    width: 100%;
+    max-width: 400px;
+    /* Limita a largura máxima */
+    margin: 0 auto;
+    /* Centraliza o formulário horizontalmente */
+}
+
+form label {
+    width: 100%;
+    /* Faz o label ocupar toda a largura do formulário */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e0e0e0;
+    /* Texto cinza claro */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    /* Faz os campos ocuparem toda a largura do formulário */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    /* Borda cinza escuro */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #1c1c1c;
+    /* Fundo preto suave */
+    color: #e0e0e0;
+    /* Texto cinza claro */
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #c74200;
+    /* Destaque dourado ao focar */
+}
+
+form button {
+    background-color: #c74200;
+    /* Cor dourada */
+    color: #1c1c1c;
+    /* Texto preto */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+form button:hover {
+    background-color: #c74200;
+    /* Dourado mais escuro */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    /* Fundo cinza escuro */
+    color: #e0e0e0;
+    /* Texto cinza claro */
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer nav ul {
+    list-style: none;
+    /* Remove os marcadores da lista */
+    display: flex;
+    /* Exibe os itens em linha */
+    justify-content: center;
+    /* Centraliza os itens */
+    gap: 15px;
+    /* Espaçamento entre os itens */
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: #c74200;
+    /* Cor dourada */
+    transition: color 0.3s;
+    /* Animação ao passar o mouse */
+}
+
+footer nav ul li a:hover {
+    color: #fff;
+    /* Cor branca ao passar o mouse */
+}
+
+/* Foto Oval */
+.foto-container {
+    text-align: center;
+    /* Centraliza a foto */
+    margin: 20px 0;
+}
+
+.foto-oval {
+    width: 270px;
+    /* Ajuste o tamanho conforme necessário */
+    height: 250px;
+    border-radius: 50%;
+    /* Torna a foto oval */
+    border: 5px solid #2c2c2c;
+    /* Adiciona uma borda escura */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    /* Adiciona uma sombra */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        /* Empilha os itens verticalmente */
+        align-items: center;
+        /* Centraliza os itens */
+        padding: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        /* Empilha os links do menu */
+        gap: 10px;
+        /* Reduz o espaçamento entre os links */
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem;
+        /* Reduz o tamanho da fonte */
+        padding: 8px 10px;
+        /* Ajusta o espaçamento interno */
+    }
+
+    main {
+        padding: 10px;
+        /* Reduz o espaçamento interno */
+        margin: 10px auto;
+        /* Ajusta a margem */
+        max-width: 100%;
+        /* Faz o main ocupar toda a largura */
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+        /* Reduz o tamanho do título */
+    }
+
+    main p {
+        font-size: 1rem;
+        /* Reduz o tamanho do texto */
+    }
+
+    form {
+        width: 90%;
+        /* Faz o formulário ocupar 90% da largura da tela */
+        padding: 15px;
+        /* Reduz o espaçamento interno */
+    }
+
+    form input,
+    form textarea,
+    form button {
+        font-size: 0.9rem;
+        /* Reduz o tamanho da fonte */
+        padding: 8px;
+        /* Ajusta o espaçamento interno */
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        /* Empilha os links do rodapé */
+        gap: 10px;
+        /* Reduz o espaçamento entre os links */
+    }
+
+    footer nav ul li a {
+        font-size: 0.9rem;
+        /* Reduz o tamanho da fonte */
+    }
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #c74200;
+    /* Cor dourada */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.3rem;
+    color: #e0e0e0;
+    /* Cinza claro */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: #d0d0d0;
+    /* Cinza mais claro */
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.h7 {
+    font-size: 1rem;
+    color: #b0b0b0;
+    /* Cinza suave */
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    /* Centraliza os cards */
+    gap: 20px;
+    /* Espaçamento entre os cards */
+    margin: 40px 0;
+    /* Espaçamento acima e abaixo */
+    flex-wrap: wrap;
+    /* Permite que os cards se ajustem em telas menores */
+}
+
+.card {
+    background-color: #2c2c2c;
+    /* Fundo cinza escuro */
+    color: #e0e0e0;
+    /* Texto cinza claro */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Sombra suave */
+    padding: 20px;
+    width: 300px;
+    /* Largura fixa */
+    text-align: center;
+    /* Centraliza o texto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animação ao passar o mouse */
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #c74200;
+    /* Cor dourada */
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Aumenta levemente o card ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    /* Sombra mais intensa */
+}
+
+.play-button {
+    background-color: #c74200;
+    /* Cor dourada */
+    color: #1c1c1c;
+    /* Texto preto */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: #c74200;
+
+    /* Dourado mais escuro */
+    transform: scale(1.1);
+    /* Aumenta levemente o botão ao passar o mouse */
+}
